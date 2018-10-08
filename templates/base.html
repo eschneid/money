@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Money Manager</title>
+      {% else %}
+      <title>Welcome to the Money Manager</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Money Manager: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
